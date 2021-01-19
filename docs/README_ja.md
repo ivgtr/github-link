@@ -1,7 +1,7 @@
 <div align="center">
   <h3 align="center">github-link</h3>
-  <p align="center">A component that allows you to set up a link for github , by simply set a tag.</p>
-  <p><a href="https://github.com/ivgtr/github-link/blob/master/docs/README_ja.md" >日本語</a> | ENGLISH</p>
+  <p align="center">タグを設置するだけでGithubのリンクを設置できるコンポーネント</p>
+  <p>日本語 | <a href="https://github.com/ivgtr/github-link/blob/master/README.md" >ENGLISH</a></p>
 </div>
 
 ---
@@ -15,18 +15,17 @@
 <github-link url="https://github.com/ivgtr/github-link" />
 ```
 
-### Demo
+### デモ
 [demo](https://ivgtr.github.io/github-link/)	
 
-### Usages
+### 使い方
 #### Script tag
-- Set a script tag like this.
-`<script src="https://unpkg.com/github-link/dist/esm/github-link.js" type="module"></script>`
-- Call `<github-link />` at any place.
+- `<script src="https://unpkg.com/github-link/dist/esm/github-link.js" type="module"></script>` このようなscriptタグを設置します
+- 任意の場所で`<github-link />` を設置してください
 
 #### Vue
-- Install it with `npm i github-link --save`
-- Call the loader as follows.
+- `npm i github-link --save` を実行してください
+- 次のようにloaderを呼び出し、タグを設置してください
 ```vue
 <script>
 import { applyPolyfills, defineCustomElements } from 'github-link/loader'
@@ -49,8 +48,8 @@ export default {
 ```
 
 #### React
-- Install it with `npm i github-link --save`
-- Call the loader as follows
+- `npm i github-link --save` を実行してください
+- 次のようにloaderを呼び出し、タグを設置してください
 ```jsx
 import { applyPolyfills, defineCustomElements } from 'github-link/loader'
 
@@ -69,11 +68,11 @@ export default function App() {
 ```
 
 
-### Configs
-| Property | Attribute | Description                               | Type                    | Default                 |
-| -------- | --------- | ----------------------------------------- | ----------------------- | ----------------------- |
-| `mode`   | `mode`    | Reverse to Lightmode and Darkmode Themes. | `"normal" \| "reverse"` | `'normal'`              |
-| `url`    | `url`     | The Github link you want to configure.    | `string`                | `'https://github.com/'` |
+### 追加の設定
+| Property | Attribute | Description                             | Type                    | Default                 |
+| -------- | --------- | --------------------------------------- | ----------------------- | ----------------------- |
+| `mode`   | `mode`    | ライトモード/ダークモードの設定を反転させます。 | `"normal" \| "reverse"` | `'normal'`              |
+| `url`    | `url`     | 設定したいGithubのURLを指定します。         | `string`                | `'https://github.com/'` |
 
 
 ----------------------------------------------
