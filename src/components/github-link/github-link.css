@@ -1,0 +1,72 @@
+#github-link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 81px;
+  height: 81px;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background: #1a1414;
+  transition: 0.1s all ease-in;
+}
+#github-link.github-link-reverse {
+  background: #fff;
+}
+#github-link > .github-link-icon {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  fill-rule: evenodd;
+  transform: rotate(45deg);
+}
+#github-link.github-link-reverse > .github-link-icon {
+  fill: #1a1414;
+}
+#github-link:hover {
+  background: #1a1414ec;
+}
+#github-link.github-link-reverse:hover {
+  background: #1a141413;
+}
+#github-link:hover > .github-link-icon {
+  animation: github-link-rotate 0.6s ease 0.1s;
+}
+
+@media (prefers-color-scheme: dark) {
+  #github-link {
+    background: #fff;
+  }
+  #github-link.github-link-reverse {
+    background: #1a1414;
+  }
+  #github-link > .github-link-icon {
+    fill: #1a1414;
+  }
+  #github-link.github-link-reverse > .github-link-icon {
+    fill: #fff;
+  }
+  #github-link:hover {
+    background: #1a141413;
+  }
+  #github-link.github-link-reverse:hover {
+    background: #1a1414ec;
+  }
+}
+
+@keyframes github-link-rotate {
+  from,
+  30%,
+  60%,
+  to {
+    transform: rotate(45deg);
+  }
+  15%,
+  75% {
+    transform: rotate(60deg);
+  }
+  45% {
+    transform: rotate(30deg);
+  }
+}
