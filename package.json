@@ -1,6 +1,6 @@
 {
   "name": "github-link",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple github link Components used anywhere.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
